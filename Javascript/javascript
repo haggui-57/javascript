@@ -1,0 +1,13 @@
+var BtnPlus = Array.from(document.getElementsByClassName("buttonincrem"));
+var BtnMoins = Array.from(document.getElementsByClassName("buttonincrem"));
+var Counter = Array.from.(document.getElementsByClassName("quantité"));
+
+for (let i = 0; i < BtnPlus.length; i++) {
+    BtnPlus[i].addEventListener("click", function() {
+    Counter[i].innerHTML = Number(Counter[i]).innerHTML + 1;
+    });
+}
+for (let i = 0; i < BtnMoins.length; i++) {
+    BtnPlus[i].addEventListener("click", function() {
+    Counter[i].innerHTML = Number(Counter[i]).innerHTML - 1;
+    });
